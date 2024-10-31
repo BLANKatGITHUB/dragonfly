@@ -53,8 +53,8 @@ jobs:
         run: |
            echo "Run, Build Application using script"
 
-           chmod +x /tests/codeql/build.sh
-           ./tests/codeql/build.sh
+           chmod +x tests/codeql/build.sh
+           tests/codeql/build.sh
 
 
       - name: Perform CodeQL Analysis
