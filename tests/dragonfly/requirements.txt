@@ -9,7 +9,7 @@ pyparsing==3.0.9
 pytest==7.1.2
 redis==5.0.0
 tomli==2.0.1
-wrapt==1.14.1
+wrapt==1.16.0
 pytest-asyncio==0.20.1
 pytest-repeat==0.9.1
 pymemcache==4.0.0
