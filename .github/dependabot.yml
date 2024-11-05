@@ -3,18 +3,39 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    allow:
+      - dependency-type: "direct"
+        update-types: "security"
+    groups:
+      dev-dependencies:
+        patterns:
+          - ".*"
 
   - package-ecosystem: "gomod"
     directories:
       - "/contrib/charts/dragonfly"
       - "/tools/replay"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    allow:
+      - dependency-type: "direct"
+        update-types: "security"
+    groups:
+      dev-dependencies:
+        patterns:
+          - ".*"
 
   - package-ecosystem: "pip"
     directories:
       - "/tests/dragonfly"
       - "/tools"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    allow:
+      - dependency-type: "direct"
+        update-types: "security"
+    groups:
+      dev-dependencies:
+        patterns:
+          - ".*"
