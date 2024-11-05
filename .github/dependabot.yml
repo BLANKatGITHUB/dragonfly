@@ -3,42 +3,29 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    open-pull-requests-limit: 1
     allow:
       - dependency-type: "direct"
-
-    groups:
-      action-updates:
-        applies-to: version-updates
-        patterns:
-          - ".*"
+      
 
   - package-ecosystem: "gomod"
     directories:
       - "/contrib/charts/dragonfly"
       - "/tools/replay"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    open-pull-requests-limit: 1
     allow:
       - dependency-type: "direct"
-
-    groups:
-      gomod-security:
-        applies-to: security-updates
-        patterns:
-          - ".*"
+        update-type: "security"
 
   - package-ecosystem: "pip"
     directories:
       - "/tests/dragonfly"
-      - "/tools"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    open-pull-requests-limit: 1
     allow:
       - dependency-type: "direct"
-
-    groups:
-      pip-security:
-        applies-to: security-updates
-        patterns:
-          - ".*"
+        update-type: "security"
