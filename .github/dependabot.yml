@@ -10,6 +10,7 @@ updates:
           - "security"
     groups:
       dev-dependencies:
+        applies-to: security-updates
         patterns:
           - ".*"
 
@@ -25,6 +26,7 @@ updates:
           - "security"
     groups:
       dev-dependencies:
+        applies-to: security-updates
         patterns:
           - ".*"
 
@@ -40,5 +42,6 @@ updates:
           - "security"
     groups:
       dev-dependencies:
+        applies-to: security-updates
         patterns:
           - ".*"
