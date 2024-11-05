@@ -6,8 +6,7 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "direct"
-        update-types: 
-          - "security"
+
     groups:
       dev-dependencies:
         applies-to: security-updates
@@ -22,8 +21,7 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "direct"
-        update-types: 
-          - "security"
+
     groups:
       dev-dependencies:
         applies-to: security-updates
@@ -38,8 +36,7 @@ updates:
       interval: "daily"
     allow:
       - dependency-type: "direct"
-        update-types:
-          - "security"
+
     groups:
       dev-dependencies:
         applies-to: security-updates
