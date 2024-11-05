@@ -1,5 +1,5 @@
 aioredis==2.0.1
-async_timeout==4.0.2
+async_timeout==5.0.0
 pytoml==0.1.21
 PyYAML==6.0
 railroad==0.5.0
