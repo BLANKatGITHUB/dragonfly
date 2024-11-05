@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     allow:
       - dependency-type: "direct"
         update-types: "security"
@@ -17,7 +17,7 @@ updates:
       - "/contrib/charts/dragonfly"
       - "/tools/replay"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     allow:
       - dependency-type: "direct"
         update-types: "security"
@@ -31,7 +31,7 @@ updates:
       - "/tests/dragonfly"
       - "/tools"
     schedule:
-      interval: "weekly"
+      interval: "daily"
     allow:
       - dependency-type: "direct"
         update-types: "security"
